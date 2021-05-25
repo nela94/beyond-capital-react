@@ -35,7 +35,7 @@ class Home extends React.Component{
           <div className="bg" >
             <img src={logo} width='100%' height='100%'/>
           </div>
-          <div>
+          <div className="hidden-slideshow">
             <SlideShow slides={slides}/>
           </div>
         </div>
