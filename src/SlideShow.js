@@ -46,7 +46,7 @@ class SlideShow extends React.Component {
     const { activeSlide, prevSlide, sliderReady } = this.state;
     return (
       <div className={classNames("slider", { "s--ready": sliderReady })}>
-        <p className="slider__top-heading">Travelers</p>
+        <p className="slider__top-heading">The Vitoria</p>
         <div className="slider__slides">
           {this.props.slides.map((slide, index) => (
             <div
@@ -54,15 +54,15 @@ class SlideShow extends React.Component {
                 "s--active": activeSlide === index,
                 "s--prev": prevSlide === index
               })}
-              key={slide.city}
+              key={slide.title}
             >
               <div className="slider__slide-content">
                 <h3 className="slider__slide-subheading">
-                  {slide.country || slide.city}
+                  {slide.content || slide.title}
                 </h3>
                 <h2 className="slider__slide-heading">
-                  {slide.city.split("").map((l) => (
-                    <span>{l}</span>
+                  {slide.title.split("").map((l, index) => (
+                    <span key={index}>{l}</span>
                   ))}
                 </h2>
                 <p className="slider__slide-readmore">read more</p>

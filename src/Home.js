@@ -1,41 +1,51 @@
 import React from 'react';
 import SlideShow from './SlideShow.js'
+import NavBar from './NavBar.js'
 import logo from './images/BeyondCapitalV2.gif';
+import bline from './images/BLineUnit.jpg'
+import gardenUnit from './images/GardenUnit.jpg'
+import penthouse from './images/PentHouse.jpg'
 
 class Home extends React.Component{
+
+  componentDidMount(){
+    let gif = document.getElementsByClassName('bg')
+    let slideDiv = document.getElementsByClassName('hidden-slideshow')
+    window.addEventListener('load', (event) => {
+      setTimeout(function() {
+        gif[0].style.display = 'none';
+        slideDiv[0].style.display = "block";
+    }, 4000);
+    });
+  }
+
   render(){
     const slides = [
       {
-        city: "Paris",
-        country: "France",
-        img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/paris.jpg"
+        key: 1,
+        title: "A-line/B-Line",
+        content: "add some other content",
+        img: bline
       },
       {
-        city: "Singapore",
-        img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/singapore.jpg"
+        key: 2,
+        title: "Garden Apartment",
+        img: gardenUnit
       },
       {
-        city: "Prague",
-        country: "Czech Republic",
-        img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/prague.jpg"
+        key: 3,
+        title: "Penthouse",
+        content: "some other content",
+        img: penthouse
       },
-      {
-        city: "Amsterdam",
-        country: "Netherlands",
-        img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/amsterdam.jpg"
-      },
-      {
-        city: "Moscow",
-        country: "Russia",
-        img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/moscow.jpg"
-      }
     ];
     return(
        <div>
           <div className="bg" >
-            <img src={logo} width='100%' height='100%'/>
+            <img src={logo} width='100%' height='100%' alt="logo pic"/>
           </div>
           <div className="hidden-slideshow">
+            <NavBar/>
             <SlideShow slides={slides}/>
           </div>
         </div>
