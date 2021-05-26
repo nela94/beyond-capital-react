@@ -1,5 +1,7 @@
 import React from 'react';
+import { withRouter } from "react-router-dom"
 import classNames from 'classnames';
+
 import './SlideShow.scss';
 
 class SlideShow extends React.Component {
@@ -65,7 +67,7 @@ class SlideShow extends React.Component {
                     <span key={index}>{l}</span>
                   ))}
                 </h2>
-                <p className="slider__slide-readmore">read more</p>
+                <a onClick={() => this.props.handleOnClick(slide)} className="slider__slide-readmore">read more</a>
               </div>
               <div className="slider__slide-parts">
                 {[...Array(this.IMAGE_PARTS).fill()].map((x, i) => (

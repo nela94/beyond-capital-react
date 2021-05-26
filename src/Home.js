@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from "react-router-dom"
 import SlideShow from './SlideShow.js'
 import NavBar from './NavBar.js'
 import logo from './images/BeyondCapitalV2.gif';
@@ -19,7 +20,15 @@ class Home extends React.Component{
     });
   }
 
+  handleOnClick(slide){
+
+    if(slide.key === 1){
+      console.log(slide)
+    }
+  }
+
   render(){
+
     const slides = [
       {
         key: 1,
@@ -46,11 +55,11 @@ class Home extends React.Component{
           </div>
           <div className="hidden-slideshow">
             <NavBar/>
-            <SlideShow slides={slides}/>
+            <SlideShow handleOnClick={this.handleOnClick} slides={slides}/>
           </div>
         </div>
       )
   };
 };
 
-export default Home
+export default withRouter(Home);
