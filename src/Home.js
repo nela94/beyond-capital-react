@@ -16,6 +16,7 @@ class Home extends React.Component{
       setTimeout(function() {
         gif[0].style.display = 'none';
         slideDiv[0].style.display = "block";
+        document.getElementsByTagName('BODY')[0].style.background = 'white';
     }, 4000);
     });
   }

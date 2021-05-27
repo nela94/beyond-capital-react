@@ -1,13 +1,17 @@
 import React from 'react';
+import NavBar from './NavBar.js'
 import { LoremIpsum } from 'react-lorem-ipsum';
 import { withRouter } from "react-router-dom"
-import './App.css'
+import './Apartments.css'
 
 class Garden extends React.Component {
   render(){
 
     return (
       <div>
+        <div>
+          <NavBar/>
+        </div>
         <div className="header-image">
           This will be header image
         </div>
