@@ -23,7 +23,7 @@ class Home extends React.Component{
   handleOnClick(slide){
 
     if(slide.key === 1){
-      console.log(slide)
+      this.props.history.push('/ALineBLine')
     }
   }
 

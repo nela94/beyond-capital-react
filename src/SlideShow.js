@@ -1,5 +1,5 @@
 import React from 'react';
-import { withRouter } from "react-router-dom"
+import { Link } from "react-router-dom"
 import classNames from 'classnames';
 
 import './SlideShow.scss';
@@ -67,7 +67,17 @@ class SlideShow extends React.Component {
                     <span key={index}>{l}</span>
                   ))}
                 </h2>
-                <a onClick={() => this.props.handleOnClick(slide)} className="slider__slide-readmore">read more</a>
+                <div>{(() => {
+                  if(slide.key === 1) {
+                    console.log(slide.key)
+                    return <Link to='/ALineBLine' className="slider__slide-readmore">read more</Link>
+                  }else if(slide.key === 3) {
+                    return <Link to='/PentHouse' className="slider__slide-readmore">read more</Link>
+                  }else if (slide.key === 2) {
+                    return <Link to='/Garden' className="slider__slide-readmore">read more</Link>
+                  }
+                })()}
+                </div>
               </div>
               <div className="slider__slide-parts">
                 {[...Array(this.IMAGE_PARTS).fill()].map((x, i) => (
