@@ -69,7 +69,6 @@ class SlideShow extends React.Component {
                 </h2>
                 <div>{(() => {
                   if(slide.key === 1) {
-                    console.log(slide.key)
                     return <Link to='/ALineBLine' className="slider__slide-readmore">read more</Link>
                   }else if(slide.key === 3) {
                     return <Link to='/PentHouse' className="slider__slide-readmore">read more</Link>

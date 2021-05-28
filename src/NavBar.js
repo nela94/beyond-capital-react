@@ -8,8 +8,8 @@ function NavBar() {
         <ul>
             <li><a href='/' className="logo">The Vitoria</a></li>
             <li><a href='/Astoria'>The Neighborhood</a></li>
-            <li><a href="#">Availability</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="/Availability">Availability</a></li>
+            <li><a href="/ContactUs">Contact Us</a></li>
         </ul>
     </nav>
   );

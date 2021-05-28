@@ -21,13 +21,6 @@ class Home extends React.Component{
     });
   }
 
-  handleOnClick(slide){
-
-    if(slide.key === 1){
-      this.props.history.push('/ALineBLine')
-    }
-  }
-
   render(){
 
     const slides = [
@@ -56,7 +49,7 @@ class Home extends React.Component{
           </div>
           <div className="hidden-slideshow">
             <NavBar/>
-            <SlideShow handleOnClick={this.handleOnClick} slides={slides}/>
+            <SlideShow slides={slides}/>
           </div>
         </div>
       )
