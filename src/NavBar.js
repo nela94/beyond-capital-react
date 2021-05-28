@@ -7,7 +7,7 @@ function NavBar() {
     <nav>
         <ul>
             <li><a href='/' className="logo">The Vitoria</a></li>
-            <li><a href="http://google.com/">The Neighborhood</a></li>
+            <li><a href='/Astoria'>The Neighborhood</a></li>
             <li><a href="#">Availability</a></li>
             <li><a href="#">Contact Us</a></li>
         </ul>
