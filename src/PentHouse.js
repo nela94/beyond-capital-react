@@ -6,6 +6,12 @@ import penthouse from './images/PentHouse.jpg'
 import './Apartments.css'
 
 class PentHouse extends React.Component {
+
+  componentDidMount(){
+    window.addEventListener('load', (event) => {
+        document.getElementsByTagName('BODY')[0].style.background = 'white';
+    })
+  }
   render(){
 
     return (

@@ -6,6 +6,12 @@ import bline from './images/BLineUnit.jpg'
 import './Apartments.css'
 
 class ALineBLine extends React.Component {
+
+  componentDidMount(){
+    window.addEventListener('load', (event) => {
+        document.getElementsByTagName('BODY')[0].style.background = 'white';
+    })
+  }
   render(){
 
     return (

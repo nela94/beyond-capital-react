@@ -6,6 +6,11 @@ import gardenUnit from './images/GardenUnit.jpg'
 import './Apartments.css'
 
 class Garden extends React.Component {
+  componentDidMount(){
+    window.addEventListener('load', (event) => {
+        document.getElementsByTagName('BODY')[0].style.background = 'white';
+    })
+  }
   render(){
 
     return (
