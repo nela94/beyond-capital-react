@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/beyond-capital-react/static/css/main.d88b3a3f.chunk.css",
+    "main.js": "/beyond-capital-react/static/js/main.adb7d611.chunk.js",
+    "main.js.map": "/beyond-capital-react/static/js/main.adb7d611.chunk.js.map",
+    "runtime-main.js": "/beyond-capital-react/static/js/runtime-main.7aab5087.js",
+    "runtime-main.js.map": "/beyond-capital-react/static/js/runtime-main.7aab5087.js.map",
+    "static/js/2.0de21033.chunk.js": "/beyond-capital-react/static/js/2.0de21033.chunk.js",
+    "static/js/2.0de21033.chunk.js.map": "/beyond-capital-react/static/js/2.0de21033.chunk.js.map",
+    "static/js/3.4570c0c3.chunk.js": "/beyond-capital-react/static/js/3.4570c0c3.chunk.js",
+    "static/js/3.4570c0c3.chunk.js.map": "/beyond-capital-react/static/js/3.4570c0c3.chunk.js.map",
+    "index.html": "/beyond-capital-react/index.html",
+    "static/css/main.d88b3a3f.chunk.css.map": "/beyond-capital-react/static/css/main.d88b3a3f.chunk.css.map",
+    "static/js/2.0de21033.chunk.js.LICENSE.txt": "/beyond-capital-react/static/js/2.0de21033.chunk.js.LICENSE.txt",
+    "static/media/BLineUnit.7f85584b.jpg": "/beyond-capital-react/static/media/BLineUnit.7f85584b.jpg",
+    "static/media/BeyondCapitalV2.81da0235.gif": "/beyond-capital-react/static/media/BeyondCapitalV2.81da0235.gif",
+    "static/media/GardenUnit.51279a12.jpg": "/beyond-capital-react/static/media/GardenUnit.51279a12.jpg",
+    "static/media/PentHouse.7b9a69c3.jpg": "/beyond-capital-react/static/media/PentHouse.7b9a69c3.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7aab5087.js",
+    "static/js/2.0de21033.chunk.js",
+    "static/css/main.d88b3a3f.chunk.css",
+    "static/js/main.adb7d611.chunk.js"
+  ]
+}
