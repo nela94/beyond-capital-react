@@ -35,6 +35,11 @@ body{
   vertical-align: top;
 }
 
+.title-text p{
+  margin-right: -4px;
+  padding-bottom: 50px;
+}
+
 .single-image{
   text-align: right;
   padding-left: 5%;
